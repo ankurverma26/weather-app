@@ -153,4 +153,9 @@ async function show_weather(){
     city.value="";
 }
 show_weather();
+
 search.addEventListener("click",show_weather);
+
+city.addEventListener("keydown",(e)=>{
+    if(e.key=="Enter") show_weather();
+})
